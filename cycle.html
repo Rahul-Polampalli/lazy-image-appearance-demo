@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="jquery.min.js"></script>
+		<script src="javascript/prototype.js" type="text/javascript"></script>
+		<script src="javascript/scriptaculous.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<hr>
+		<div class="row col-md-12" style="border-bottom:1px solid black;">
+			<div class="col-md-6" id="firstDiv">
+				<img src="x.jpg"  width="40%"  alt="No Pic"/>
+			</div>
+			<div class="col-md-6">
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever
+			</div>
+		</div>
+		<p></p>
+		<hr>
+		<br>
+		<div class="row col-md-12" style="border-bottom:1px solid black;">
+			<div class="col-md-6">
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+			</div>
+			<div class="col-md-6" id="secondDiv">
+				<img src="y.jpg"  width="40%" alt="No Pic"/>
+			</div>
+		</div>
+		<p></p>
+		<hr>
+		<br>
+		<div class="row col-md-12" style="border-bottom:1px solid black;">
+			<div class="col-md-6 third" id="thirdDiv"  style="display:none;">
+				<img src="z.jpg"  width="40%"  alt="No Pic" id="img1"/>
+			</div>
+			<div class="col-md-6" id="thirdPara">
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+			</div>
+		</div>
+		<p></p>
+		<hr>
+		<br>
+		<div class="row col-md-12" style="border-bottom:1px solid black;">
+			<div class="col-md-6">
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+			</div>
+			<div class="col-md-6" id="fourthDiv" style="display:none;">
+				<img src="x.jpg"  width="40%" alt="No Pic" id="img2"/>
+			</div>
+		</div>
+		<p></p>
+		<hr>
+		<br>
+		<div class="row col-md-12" style="border-bottom:1px solid black;">
+			<div class="col-md-6" id="fifthDiv" style="display:none;">
+				<img src="y.jpg"  width="40%" alt="No Pic" id="img3"/>
+			</div>
+			<div class="col-md-6">
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley oftype and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettin g, remaining essentially unchanged
+					Lorem Ipsum is simply dummy text of the printing and typesettin g industry. Lorem Ipsum has been the industry's standard dummy text ever
+			</div>
+		</div>
+		<p></p>
+		<hr>
+	</body>
+	<script>
+		jQuery(document).scroll(function(){
+			var top = jQuery(document).scrollTop();
+
+			if(top > 0){
+				$('thirdDiv').appear({duration:2});
+				new Effect.Move('img1', { x: 20, y: 0, mode: 'absolute' });
+			}
+			if(top > 180){
+				$('fourthDiv').appear({duration:2});
+				new Effect.Move('img2', { x: -20, y: 0, mode: 'absolute' });	
+			}
+			if(top > 190){
+				$('fifthDiv').appear({duration:2});
+				new Effect.Move('img3', { x: 20, y: 0, mode: 'absolute' });	
+			}
+		});
+	</script>
+</html>
